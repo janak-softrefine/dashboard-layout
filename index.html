@@ -4,38 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"  >
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"  > -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Dashboard</title>
 </head>
 <body>
   <div class="container">
       <header class="section-header">
-        <div class="row-one">
-            <div class="logo-box">
+        <div class="row-one flex-box">
+            <div class="logo-box flex-box">
                 <ion-icon name="cloud" class="icon icon-cloud"></ion-icon>
                 <p class="logo-text">SKS Funding</p>
             </div>
-            <div class="content-box">
+            <div class="content-box flex-box">
                 <a href="#" class="btn btn-need-help">Need help</a>
                 <ion-icon name="notifications-outline" class="icon icon-notifications"></ion-icon>
+                <ion-icon name="ellipse" class="activity-icon icon-yellow notifications-yellow"></ion-icon>
                 <img class="header-profile" src="img/header-profile.png" alt="profile-picture">
-        </div>
-        </div>
+            </div>
+            </div>
+      <div class="row-two flex-box">
+              <div class="profile-details flex-box">
+                <img src="img/header-profile.png" alt="profile-picture" class="profile-picture">
+                <div class="greatings-box flex-box">
+                    <p class="greatings-text">Hi, Emma good morning</p>
+                    <p class="header-text">Email-akp.emma1231@gmail.com</p>
+                    <p class="header-text">Phone-+91 9878954689</p>
+                    <p class="header-text">Address-PO box 2103-NJ 07036 (USA)</p>
+                    <p class="header-text">Plan-$100</p>
+                    <p class="header-text">Joined-25 Aug 2019</p>
+                </div>
+              </div>
 
-      <div class="row-two">
-        <img src="img/header-profile.png" alt="profile-picture" class="profile-picture">
-        <div>
-            <p class="header-primary">Hi, Emma good morning</p>
-            <p class="header-text">Email-akp.emma1231@gmail.com</p>
-            <p class="header-text">Phone-+91 9878954689</p>
-            <p class="header-text">Address-PO box 2103-NJ 07036 (USA)</p>
-            <p class="header-text">Plan-$100</p>
-            <p class="header-text">Joined-25 Aug 2019</p>
-        </div>
-      </div>
+              <div class="profile-completion flex-box">
+                <div class="skill">
+                  <div class="outer">
+                      <div class="inner flex-box">
+                          <div id="number">
+                            
+                          </div>
+                      </div>
+                  </div>
+                </div>
+               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="80" height="80">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#f59f00" />
+                        <stop offset="100%" stop-color="#fab005" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="40" cy="40" r="38" stroke-linecap="round" />
+              </svg>
 
-      <div class="profile-completion">
+              <div class="profile-completion-content flex-box">
+                <div>
+                  <p class="profile-completion-text">Profile Completion</p>
+                  <p class="header-text">please complete profile</p>
+               </div>
+                <a href="#" class="btn btn-complete">Complete</a>
+              </div>
+              </div>
       </div>
       </header>
 
@@ -76,27 +107,26 @@
 
         <div class="about-me-content-box">
           <p class="secondary-title">Email</p>
-          <p class="about-me-content">akp.emma1231@gmail.com</p>
+          <p class="about-me-text">akp.emma1231@gmail.com</p>
         </div>
         <div class="about-me-content-box">
           <p class="secondary-title">Phone</p>
-          <p class="about-me-content">+91 9878954689</p>
+          <p class="about-me-text">+91 9878954689</p>
         </div><div class="about-me-content-box">
           <p class="secondary-title">Address</p>
-          <p class="about-me-content">PO box 2103-NJ 07036 (USA)</p>
+          <p class="about-me-text">PO box 2103-NJ 07036 (USA)</p>
         </div><div class="about-me-content-box">
           <p class="secondary-title">Plan</p>
-          <p class="about-me-content">$100</p>
+          <p class="about-me-text">$100</p>
         </div><div class="about-me-content-box">
           <p class="secondary-title">Joined</p>
-          <p class="about-me-content">25 Aug 2019</p>
+          <p class="about-me-text">25 Aug 2019</p>
         </div>
-        
       </aside>
 
       <main class="main">
         <nav class="section-nav">
-          <ul class="main-nav-list">
+          <ul class="main-nav-list flex-box">
             <li class="flex-box flex-center">
               <ion-icon name="home" class="icon icon-home"></ion-icon>
               <a class="main-nav-link active" href="#">Dashboard</a>
@@ -110,7 +140,162 @@
           </ul>
         </nav>
 
-      
+        <section class="section-claim grid grid-col-3">
+
+          <div class="claim-box flex-box">
+              <p class="claim-number">23</p>
+              <div class="claim-content flex-box">
+                    <p class="claim-text-box">New claims</p>
+                    <div class="claim-img-box flex-box">
+                      <img src="img/customer-6.jpg" alt="Customer photo" />
+                      <img src="img/dave.jpg" alt="Customer photo" />
+                      <img src="img/hannah.jpg" alt="Customer photo" />
+                      <div class="img-plus flex-box">
+                        +32
+                      </div>
+                    </div> 
+              </div>
+          </div>
+          <div class="claim-box flex-box">
+            <p class="claim-number">76</p>
+            <div class="claim-content flex-box">
+                  <p class="claim-text-box">New Members</p>
+                  <div class="claim-img-box flex-box">
+                    <img src="img/customer-6.jpg" alt="Customer photo" />
+                    <img src="img/dave.jpg" alt="Customer photo" />
+                    <img src="img/hannah.jpg" alt="Customer photo" />
+                    <div class="img-plus flex-box">
+                      +32
+                    </div>
+                  </div> 
+            </div>
+        </div>
+        <div class="claim-box flex-box">
+          <p class="claim-number">102</p>
+          <div class="claim-content flex-box">
+                <p class="claim-text-box">Total claims</p>
+                <div class="claim-img-box flex-box">
+                  <img src="img/customer-6.jpg" alt="Customer photo" />
+                  <img src="img/dave.jpg" alt="Customer photo" />
+                  <img src="img/hannah.jpg" alt="Customer photo" />
+                  <div class="img-plus flex-box">
+                    +32
+                  </div>
+                </div> 
+          </div>
+        </div>
+      </section>
+
+        <section class="section-profile-info grid grid-col-2">
+          <div class="profile-info-main flex-box">
+            <div class="profile-info-box flex-box">
+              <img src="img/profile-one.jpg" alt="profile profile-picture">
+              <div class="profile-info-content">
+                  <p class="person-name">Amelia kimani</p>
+                  <ul class="person-details flex-box">
+                    <li class="person-detail flex-box">
+                      <ion-icon name="file-tray-stacked-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Filed</strong> -Thu, Jul 23,2019 12:30 PM EDT</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="calendar-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Due</strong> -Wed, Jul 23,2019 12:30 PM</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="location-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Address</strong>- Hillside Rd, Hiranadani</span>
+                    </li>
+                  </ul>
+              </div>
+              <a href="#" class="btn btn-pay">Pay</a>
+            </div>
+
+            <div class="profile-info-box flex-box">
+              <img src="img/profile-two.jpg" alt="profile-picture">
+              <div class="profile-info-content">
+                  <p class="person-name">Genevieve juma</p>
+                  <ul class="person-details flex-box">
+                    <li class="person-detail flex-box">
+                      <ion-icon name="file-tray-stacked-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Filed</strong> -Thu, Jul 23,2019 12:30 PM EDT</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="calendar-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Due</strong> -Wed, Jul 23,2019 12:30 PM</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="location-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Address</strong>- Hillside Rd, Hiranadani</span>
+                    </li>
+                  </ul>
+              </div>
+              <a href="#" class="btn btn-pay">Pay</a>
+            </div>
+
+            <div class="profile-info-box flex-box">
+              <img src="img/profile-3.jpg" alt="profile profile-picture">
+              <div class="profile-info-content">
+                  <p class="person-name">theodore wachira</p>
+                  <ul class="person-details flex-box">
+                    <li class="person-detail flex-box">
+                      <ion-icon name="file-tray-stacked-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Filed</strong> -Thu, Jul 23,2019 12:30 PM EDT</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="calendar-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Due</strong> -Wed, Jul 23,2019 12:30 PM</span>
+                    </li>
+                    <li class="person-detail flex-box">
+                      <ion-icon name="location-outline" class="profile-icon"></ion-icon>
+                      <span><strong>Address</strong>- Hillside Rd, Hiranadani</span>
+                    </li>
+                  </ul>
+              </div>
+              <a href="#" class="btn btn-pay">Pay</a>
+            </div>
+          </div>
+
+          <div class="activity-info-main">
+            <p class="activity-title-main secondary-title ">Activity</p>
+
+            <div class="activity-info-box flex-box">
+              <ion-icon name="ellipse" class="activity-icon icon-blue"></ion-icon>
+              <div class="activity flex-box">
+                <p class="activity-title-secondary">Claimed $2000</p>
+                <p class="activity-text">23 members are got claimed in washington DC</p>
+                <p class="activity-text">05:40pm</p>
+              </div>
+            </div>
+
+            <div class="activity-info-box flex-box">
+              <ion-icon name="ellipse" class="activity-icon icon-yellow"></ion-icon>
+              <div class="activity flex-box">
+                <p class="activity-title-secondary">Claimed $2000</p>
+                <p class="activity-text">23 members are got claimed in washington DC</p>
+                <p class="activity-text">05:40pm</p>
+              </div>
+            </div>
+
+            <div class="activity-info-box flex-box">
+              <ion-icon name="ellipse" class="activity-icon icon-green"></ion-icon>
+              <div class="activity flex-box">
+                <p class="activity-title-secondary">Claimed $2000</p>
+                <p class="activity-text">23 members are got claimed in washington DC</p>
+                <p class="activity-text">05:40pm</p>
+              </div>
+            </div>
+
+            <div class="activity-info-box flex-box">
+              <ion-icon name="ellipse" class="activity-icon icon-blue"></ion-icon>
+              <div class="activity flex-box">
+                <p class="activity-title-secondary">Claimed $2000</p>
+                <p class="activity-text">23 members are got claimed in washington DC</p>
+                <p class="activity-text">05:40pm</p>
+              </div>
+            </div>
+          </div>
+          
+        </section>
 
       </main>
   </div>
@@ -120,3 +305,21 @@
 
 </body>
 </html>
+
+<script>
+    let number= document.getElementById("number");
+    let counter=0;
+    setInterval(()=>{
+        if(counter==75){
+            clearInterval()
+        }
+        else{
+            counter+=1;
+        number.innerHTML=counter+"%";
+        }
+       
+    },15)
+</script>
+
+
+
