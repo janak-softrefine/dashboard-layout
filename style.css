@@ -422,6 +422,21 @@ svg {
   align-items: flex-start;
   gap: 1.5rem;
 }
+.activity-wrapper {
+  height: 45rem;
+
+  overflow-y: scroll;
+}
+.activity-wrapper::-webkit-scrollbar {
+  width: 5px;
+  background: #dee2e6;
+}
+
+.activity-wrapper::-webkit-scrollbar-thumb {
+  background: #f59f00;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
 
 .icon-blue {
   color: #1c7ed6;
